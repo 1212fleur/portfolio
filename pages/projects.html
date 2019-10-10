@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf=utf-8">
+        <title>Projets | Portfolio Fleuriane LEHMANN</title>
+        <link rel="stylesheet" href="../styles/css/style.css">
+        <link rel="stylesheet" href="../styles/css/component/circle.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <!--  MENU -->
+        <nav class="menu">
+            <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+            <label class="menu-open-button" for="menu-open">
+                <span class="hamburger hamburger-1"></span>
+                <span class="hamburger hamburger-2"></span>
+                <span class="hamburger hamburger-3"></span>
+            </label>
+
+            <a href="../index.html" id="home" class="menu-item">
+                <img alt="Icone page d'accueil" src="../image/icons/home-button.svg" class="home-icon-button-on">
+                <img alt="Icone page d'accueil au survol" src="../image/icons/home-button-hover.svg" class="home-icon-button-off">
+            </a>
+            <a href="../pages/projects.html" id="work" class="menu-item">
+                <img alt="Icône page de mes projets" src="../image/icons/work-button.svg" class="work-icon-button-on">
+                <img alt="Icône page de mes projets au survol" src="../image/icons/work-button-hover.svg" class="work-icon-button-off">
+            </a>
+        </nav>
+
+        <div class="multilingue">
+            <a href="projects-english.html"><img class="british-flag" src="../image/icons/english-button.svg" alt="Traduction en Anglais du site"></a>
+        </div>
+
+        <!-- FILTERS & GLUE MENU  -->
+        <svg class="gloo-filters" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="shadowed-goo">
+
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                    <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+                    <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+                    <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+                    <feComposite in2="shadow" in="goo" result="goo" />
+                    <feComposite in2="goo" in="SourceGraphic" result="mix" />
+                </filter>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                    <feComposite in2="goo" in="SourceGraphic" result="mix" />
+                </filter>
+            </defs>
+        </svg>
+
+        <div class="container">
+            <h2>MES PROJETS</h2>
+            <p class="descriptif-project">Pour faire défiler les diapositives de chaque projet, il vous suffit d'utiliser les flèches du bas ou simplement la touche espace de votre clavier.</p>
+            <div class="projects">
+                <a href="slides-projects/communication-multicanale.html"><img class="picture-project" src="../image/screen-projects/communication-multicanale.PNG" alt="Projet communication digitale"></a>
+                <a href="slides-projects/veille-projective.html"><img class="picture-project" src="../image/screen-projects/veille-projective.PNG" alt="Projet veille projective"></a>
+                <a href="slides-projects/ux-design.html"><img class="picture-project" src="../image/screen-projects/UX-design.PNG" alt="Projet UX Design"></a>
+                <a href="slides-projects/strategie-digitale.html"><img class="picture-project" src="../image/screen-projects/strategie-digitale.PNG" alt="Projet stratégie digitale"></a>
+                <a href="slides-projects/plan-de%20communication.html"><img class="picture-project" src="../image/screen-projects/plan-de-communication.PNG" alt="Projet plan de communication"></a>
+                <a href="slides-projects/dev-web.html"><img class="picture-project" src="../image/screen-projects/development-web.PNG" alt="Projet développement"></a>
+                <a href="slides-projects/strategie-marketing.html"><img class="picture-project" src="../image/screen-projects/stratégie-marketing.PNG" alt="Projet strategie marketing"></a>
+            </div>
+        </div>
+
+        <footer class="footer-distributed">
+
+            <div class="footer-left">
+
+                <h3><a href="../index.html"><img class="logo-footer-me" src="../image/logos/logo-grey-me.png" alt="Logo de Fleuriane LEHMANN"></a></h3>
+
+                <p class="footer-links">
+                    <a href="../index.html">Accueil |</a>
+                    <a href="../pages/projects.html">Projets</a>
+                </p>
+
+                <p class="footer-company-name">Fleuriane LEHMANN &copy; 2019</p>
+
+                <div class="footer-icons">
+                    <a href="https://www.linkedin.com/in/fleuriane-lehmann-728443b3/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+
+                <p>Me contacter</p>
+
+                <form action="#" method="post">
+
+                    <input type="text" name="email" placeholder="Email" />
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button>Envoyer</button>
+
+                </form>
+
+            </div>
+
+        </footer>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>

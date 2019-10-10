@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="fr">
+    
+    <head>
+        <meta charset="utf=utf-8">
+        <title>Accueil | Portfolio Fleuriane LEHMANN</title>
+        <link rel="stylesheet" href="styles/css/style.css">
+        <link rel="stylesheet" href="styles/css/component/circle.css">
+    </head>
+    
+    <body>
+        <!--  MENU -->
+        <nav class="menu">
+            <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+            <label class="menu-open-button" for="menu-open">
+                <span class="hamburger hamburger-1"></span>
+                <span class="hamburger hamburger-2"></span>
+                <span class="hamburger hamburger-3"></span>
+            </label>
+
+            <a href="index.html" id="home" class="menu-item">
+                <img alt="Icone page d'accueil" src="image/icons/home-button.svg" class="home-icon-button-on">
+                <img alt="Icone page d'accueil au survol" src="image/icons/home-button-hover.svg" class="home-icon-button-off">
+            </a>
+            <a href="pages/projects.html" id="work" class="menu-item">
+                <img alt="Icône page de mes projets" src="image/icons/work-button.svg" class="work-icon-button-on">
+                <img alt="Icône page de mes projets au survol" src="image/icons/work-button-hover.svg" class="work-icon-button-off">
+            </a>
+        </nav>
+
+        <div class="multilingue">
+            <a href="index-english.html"><img class="british-flag" src="image/icons/english-button.svg" alt="Traduction en Anglais du site"></a>
+        </div>
+
+        <!-- FILTERS & GLUE MENU  -->
+        <svg class="gloo-filters" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="shadowed-goo">
+
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                    <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+                    <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+                    <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+                    <feComposite in2="shadow" in="goo" result="goo" />
+                    <feComposite in2="goo" in="SourceGraphic" result="mix" />
+                </filter>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                    <feComposite in2="goo" in="SourceGraphic" result="mix" />
+                </filter>
+            </defs>
+        </svg>
+
+        <header>
+            <img class="picture-me" src="image/logos/logo-blue-me.png" alt="Logo de Fleuriane LEHMANN">
+            <h2 class="titre-poste">Étudiante en marketing</h2>
+
+            <div>
+                <blockquote id="presentation" class="flow-text">
+
+                    <div class="description-intro-me">
+
+                        <div class="bloc-pizza">
+                            <p class="pizza-logo">🍕</p>
+                        </div>
+
+                        <div class="bloc-description">
+                            <p><strong>Pizza - <span class="name-pizza keyword">Fleuriane LEHMANN</span></strong></p>
+                            <p>24 ans</p>
+                            <p>Permis B</p><br />
+                        </div>
+                    </div>
+
+                    <p>Pate à base d’étude scientifique (biologie animale et végétale) agrémentée de plusieurs topping tel que <span class="keyword">le commerce</span>, <span class="keyword">la décoration</span>, <span class="keyword">le travail d’équipe</span>,
+                        <span class="keyword">le management</span>, <span class="keyword">le marketing</span> et <span class="keyword">le domaine pharmaceutique</span>.</p><br/>
+
+                    <p>Cette pizza gagne à <span class="keyword">être avec les autres</span>, <span class="keyword">communiquer</span> et <span class="keyword">partager ces expériences</span>.</p><br/>
+
+                    <p>Elle aime aussi <span class="keyword">le voyage</span>, et <span class="keyword">la musique</span> et pense s’exporter <span class="keyword">à l'étranger</span>.</p><br>
+                    <a href="https://www.linkedin.com/in/fleuriane-lehmann-728443b3/" target="_blank" ><img class="logo-linkedin" alt="Me contacter sur Linkedin" src="image/icons/linkedin-logo.svg"></a>
+                </blockquote>
+            </div>
+        </header>
+
+        <br/>
+
+
+
+            <!-- CONTAINER SKILLS -->
+            <div class="container">
+                <h2 class="title-bloc">COMPÉTENCES</h2>
+                <div class="row">
+
+                    <!-- FIRST COLUMN -->
+                    <div class="column_1">
+                        <h2 class="categories">Marketing</h2>
+                        
+                        <div class="progress_bar">
+                            <div class="assets">
+                                <h3>‣ Analyse des ventes</h3>
+                                <span class="percent">60%</span>
+                            </div>
+                            <div class="bar-skills">
+                                <div class="progress" style="height: 17px">
+                                    <div class="determinate" style="width: 60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress_bar">
+                            <div class="assets">
+                                <h3>‣ Étude de marché</h3>
+                                <span class="percent">75%</span>
+                            </div>
+                            <div class="bar-skills">
+                                <div class="progress" style="height: 17px">
+                                    <div class="determinate" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress_bar">
+                            <div class="assets">
+                                <h3>‣ Veille concurrencielle</h3>
+                                <span class="percent">80%</span>
+                            </div>
+                            <div class="bar-skills">
+                                <div class="progress" style="height: 17px">
+                                    <div class="determinate" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress_bar">
+                            <div class="assets">
+                                <h3>‣ Mix-marketing</h3>
+                                <span class="percent">55%</span>
+                            </div>
+                            <div class="bar-skills">
+                                <div class="progress" style="height: 17px">
+                                    <div class="determinate" style="width: 55%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress_bar">
+                            <div class="assets">
+                                <h3>‣ Analyse de l'environnement</h3>
+                                <span class="percent">60%</span>
+                            </div>
+                            <div class="bar-skills">
+                                <div class="progress" style="height: 17px">
+                                    <div class="determinate" style="width: 60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress_bar">
+                            <div class="assets">
+                                <h3>‣ Plan de communication</h3>
+                                <span class="percent">50%</span>
+                            </div>
+                            <div class="bar-skills">
+                                <div class="progress" style="height: 17px">
+                                    <div class="determinate" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress_bar">
+                            <div class="assets">
+                                <h3>‣ Évenementiel</h3>
+                                <span class="percent">50%</span>
+                            </div>
+                            <div class="bar-skills">
+                                <div class="progress" style="height: 17px">
+                                    <div class="determinate" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        
+                        <h2 class="categories">Vente et management</h2>
+                        
+                        <div class="progress_bar">
+                            <div class="assets">
+                                <h3>‣ Vente</h3>
+                                <span class="percent">60%</span>
+                            </div>
+                            <div class="bar-skills">
+                                <div class="progress" style="height: 17px">
+                                    <div class="determinate" style="width: 60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress_bar">
+                            <div class="assets">
+                                <h3>‣ Relation client</h3>
+                                <span class="percent">60%</span>
+                            </div>
+                            <div class="bar-skills">
+                                <div class="progress" style="height: 17px">
+                                    <div class="determinate" style="width: 60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress_bar">
+                            <div class="assets">
+                                <h3>‣ Gestion des relations clients</h3>
+                                <span class="percent">50%</span>
+                            </div>
+                            <div class="bar-skills">
+                                <div class="progress" style="height: 17px">
+                                    <div class="determinate" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress_bar">
+                            <div class="assets">
+                                <h3>‣ Gestion des opérations publicitaires</h3>
+                                <span class="percent">70%</span>
+                            </div>
+                            <div class="bar-skills">
+                                <div class="progress" style="height: 17px">
+                                    <div class="determinate" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress_bar">
+                            <div class="assets">
+                                <h3>‣ Merchandising</h3>
+                                <span class="percent">55%</span>
+                            </div>
+                            <div class="bar-skills">
+                                <div class="progress" style="height: 17px">
+                                    <div class="determinate" style="width: 55%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SECOND COLUMN -->
+                    <div class="column_2">
+                        <h2 class="categories">Logiciels</h2>
+                        <div class="progress_circle">
+                            <h3 class="title-skills">Illustrator</h3>
+                            <div class="c100 p60 center">
+                                <span>60%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress_circle">
+                            <h3 class="title-skills">Pack office</h3>
+                            <div class="c100 p80 center">
+                                <span>80%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress_circle">
+                            <h3 class="title-skills">Wordpress</h3>
+                            <div class="c100 p70 center">
+                                <span>70%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress_circle">
+                            <h3 class="title-skills">Easycatalogue</h3>
+                            <div class="c100 p50 center">
+                                <span>50%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="categories">Langues</h2>
+                        <div class="progress_circle">
+                            <h3 class="title-skills">Anglais</h3>
+                            <div class="c100 p70 center">
+                                <span>70%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress_circle">
+                            <h3 class="title-skills">HTML / CSS </h3>
+                            <div class="c100 p50 center">
+                                <span>50%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF CONTAINER SKILLS  -->
+
+            <!-- CONTAINER PROFESSIONNAL EXPERIENCE -->
+            <div class="container"> 
+                <h2>EXPÉRIENCES PROFESSIONNELLES</h2>
+                <div>
+                <ul class="timeline">
+                    <li class="timeline-event">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">2018/2019 - alternance</p>
+                            <h2>Assistante Marketing</h2>
+                            <h3>Laboratoire Arrow - Lyon 07 </h3>
+                            <p>Mise à jour du catalogue<br>Mise à jour du livret DCI/Princeps<br/>Organisation du stand lors des congrès<br/>Création des fiches produits, extraits de catalogue et emailing<br/>Gestion et suivi des goodies<br/>Préparation des dotations pour les délégués pharmaceutiques</p>
+                        </div>
+                    </li>
+
+                    <li class="timeline-event">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">2016/2018 - alternance</p>
+                            <h2>Adjointe de rayon décoration</h2>
+                            <h3>Conforama - Champagne Au Mont d'Or</h3>
+                            <p>Gestion des opérations publicitaires<br/>Gestion journalière du rayon décoration<br/>Merchandising<br/>Gestion des réclamations clients<br/>Approvisionnement et facing<br/>Ventes et conseils</p>
+                        </div>
+                    </li>
+
+                    <li class="timeline-event">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">2016/6 mois - CDD</p>
+                            <h2>Opératrice de saisie</h2>
+                            <h3>Laboratoire Arrow - Lyon 7</h3>
+                            <p>Saisie des commandes clients<br>Gestion des appels entrants</p>
+                        </div>
+                    </li>
+                </ul> 
+                </div>
+                </div>
+            <!-- END OF CONTAINER PROFESSIONNAL EXPERIENCE -->
+
+            <!-- CONTAINER SCHOOLS & DIPLOMA -->
+            <div class="container">
+                
+                <h2>ÉTUDES</h2>
+                
+                <div class="flip">
+                    <div class="front" style="background-image: url(image/graduation-cap-flatlay.jpg)">
+                        <h3 class="text-shadow">BAC STL</h3>
+                    </div>
+                    <div class="back">
+                        <h4>2010-2013 BAC</h4>
+                        <p class="diploma">Sciences et Techniques de Laboratoire</p>
+                        <p class="location-diploma">Lycée la Martinière Duchère, Lyon</p>
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="front" style="background-image: url(image/stack-of-diplomas.jpg)">
+                        <h3 class="text-shadow">BTS MUC</h3>
+                    </div>
+                    <div class="back">
+                        <h4>2016-2018 BTS</h4>
+                        <p class="diploma">Management des Unités Commercialesn</p>
+                        <p class="location-diploma">CIEFA, Lyon</p>
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="front" style="background-image: url(image/gold-tassle-graduation-cap-and-diploma.jpg)">
+                        <h3 class="text-shadow">Bachelor RPMC</h3>
+                    </div>
+                    <div class="back">
+                        <h4>2018-2019 BACHELOR</h4>
+                        <p class="diploma">Responsable Projet Marketing Communication</p>
+                        <p class="location-diploma">Sciences-U, Lyon</p>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF CONTAINER SCHOOLS & DIPLOMA -->
+
+<!--            &lt;!&ndash; CONTAINER CONTACT FORM &ndash;&gt;-->
+<!--            <div class="container-form">-->
+<!--            <h2 id="form_title">ENVIE DE ME CONTACTER ?</h2>-->
+<!--                <div class="form">-->
+
+<!--                    <form class="register-form">-->
+<!--                        <input type="text" placeholder="Nom"/>-->
+<!--                        <input type="password" placeholder="Prénom"/>-->
+<!--                        <input type="text" placeholder="Email"/>-->
+<!--                        <input class="body-mail" type="text" placeholder="Message"/>-->
+<!--                        <div class="contact_button">-->
+<!--                            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Envoyer</button>-->
+<!--                        </div>-->
+<!--                    </form>-->
+<!--                    -->
+
+<!--                    -->
+<!--                </div>-->
+<!--            &lt;!&ndash; END OF CONTAINER CONTACT FORM &ndash;&gt;-->
+<!--            -->
+<!--            <br/>-->
+<!--            </div>-->
+
+        <footer class="footer-distributed">
+
+            <div class="footer-left">
+
+                <h3><a href="index.html"><img class="logo-footer-me" src="image/logos/logo-grey-me.png" alt="Logo de Fleuriane LEHMANN"></a></h3>
+
+                <p class="footer-links">
+                    <a href="index.html">Accueil |</a>
+                    <a href="pages/projects.html">Projets</a>
+                </p>
+
+                <p class="footer-company-name">Fleuriane LEHMANN &copy; 2019</p>
+
+                <div class="footer-icons">
+                    <a href="https://www.linkedin.com/in/fleuriane-lehmann-728443b3/" target="_blank" ><img class="logo-linkedin" alt="Me contacter sur Linkedin" src="image/icons/linkedin-logo.svg"></a>
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+
+                <p>Me contacter</p>
+
+                <form action="#" method="post">
+
+                    <input type="text" name="email" placeholder="Email" />
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button>Envoyer</button>
+
+                </form>
+
+            </div>
+
+        </footer>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>

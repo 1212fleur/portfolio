@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf=utf-8">
+        <title>Projects | Website Fleuriane LEHMANN</title>
+        <link rel="stylesheet" href="../styles/css/style.css">
+        <link rel="stylesheet" href="../styles/css/component/circle.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <!--  MENU -->
+        <nav class="menu">
+            <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+            <label class="menu-open-button" for="menu-open">
+                <span class="hamburger hamburger-1"></span>
+                <span class="hamburger hamburger-2"></span>
+                <span class="hamburger hamburger-3"></span>
+            </label>
+
+            <a href="../index-english.html" id="home" class="menu-item">
+                <img alt="Home icon" src="../image/icons/home-button.svg" class="home-icon-button-on">
+                <img alt="Home icon on hover" src="../image/icons/home-button-hover.svg" class="home-icon-button-off">
+            </a>
+            <a href="../pages/projects-english.html" id="work" class="menu-item">
+                <img alt="Project icon" src="../image/icons/work-button.svg" class="work-icon-button-on">
+                <img alt="Project icon on hover" src="../image/icons/work-button-hover.svg" class="work-icon-button-off">
+            </a>
+        </nav>
+
+        <div class="multilingue">
+            <a href="projects.html"><img class="british-flag" src="../image/icons/french-button.svg" alt="Translate website in French"></a>
+        </div>
+
+
+        <!-- FILTERS & GLUE MENU  -->
+        <svg class="gloo-filters" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="shadowed-goo">
+
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                    <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+                    <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+                    <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+                    <feComposite in2="shadow" in="goo" result="goo" />
+                    <feComposite in2="goo" in="SourceGraphic" result="mix" />
+                </filter>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                    <feComposite in2="goo" in="SourceGraphic" result="mix" />
+                </filter>
+            </defs>
+        </svg>
+
+        <div class="container">
+            <h2>MY PROJECTS</h2>
+            <p class="descriptif-project">To scroll through the slides of each project, simply use arrows (in the bottom of the page) or simply space key on your keyboard.</p>
+            <div class="projects">
+                <a href="slides-projects-english/multi-channel-communication-strategy.html"><img class="picture-project" src="../image/screen-projects/english-screen-projects/multi-channel-communication-strategy.PNG"></a>
+                <a href="slides-projects-english/projective-watch.html"><img class="picture-project" src="../image/screen-projects/english-screen-projects/projective-watch.PNG"></a>
+                <a href="slides-projects-english/ux-design-english.html"><img class="picture-project" src="../image/screen-projects/english-screen-projects/ux-design-english.PNG"></a>
+                <a href="slides-projects-english/digital-strategy.html"><img class="picture-project" src="../image/screen-projects/english-screen-projects/digital-strategy.PNG"></a>
+                <a href="slides-projects-english/communication-strategy.html"><img class="picture-project" src="../image/screen-projects/english-screen-projects/communication-strategy.PNG"></a>
+                <a href="slides-projects-english/web-development.html"><img class="picture-project" src="../image/screen-projects/english-screen-projects/web-development.PNG"></a>
+                <a href="slides-projects"><img class="picture-project" src="../image/screen-projects/stratégie-marketing.PNG"></a>
+            </div>
+        </div>
+
+        <footer class="footer-distributed">
+
+            <div class="footer-left">
+
+                <h3><a href="../index.html"><img class="logo-footer-me" src="../image/logos/logo-grey-me.png" alt="Fleuriane LEHMANN - LOGO"></a></h3>
+
+                <p class="footer-links">
+                    <a href="../index-english.html">Home |</a>
+                    <a href="../pages/projects-english.html">Projects</a>
+                </p>
+
+                <p class="footer-company-name">Fleuriane LEHMANN &copy; 2019</p>
+
+                <div class="footer-icons">
+                    <a href="https://www.linkedin.com/in/fleuriane-lehmann-728443b3/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+
+                <p>Contact me</p>
+
+                <form action="#" method="post">
+
+                    <input type="text" name="email" placeholder="Email" />
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button>Submit</button>
+
+                </form>
+
+            </div>
+
+        </footer>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>
